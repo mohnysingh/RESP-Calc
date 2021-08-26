@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESP</title>
+</head>
+<body bgcolor="pink">
+<div style="padding: 0px 20%">
+
+<h1 style="color: red"> RESP Illustration <br><hr style="border: 1px solid white"></h2> 
+
+<!-- Choose a date and enter in input field -->
+<b>Enter Date of Birth: <input type=date id = DOB> </b>
+
+<!-- Choose a date and enter in input field -->
+<button type="submit" onclick = "checkEligibility()"> Check Eligibility </button>
+<span id = "message" style="color:red"> </span>  
+<i><h3 style="color:white" id="result" ></h3></i>
+
+<div id="part2" style="display: none;">
+  <b>Enter Monthly Savings:
+  <input type=number style="margin-left: 30px; width: 70px;" id="savings" min=0> $</b>
+  <br/>
+  <br/>
+  <button type="submit" onclick = "visualise()"> Visualise </button>
+  <br/>
+  <br/>
+  <div id="visualisedata"></div>
+  <hr style="border: 1px solid white">
+  <div id="summary"></div>
+  
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
